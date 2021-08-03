@@ -5,7 +5,7 @@ from .models import Author, Book, Genre, Language, Status, BookInstance
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'date_of_birth', 'date_of_death')
     list_filter = ('last_name', 'date_of_birth')
-    fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death'), 'biographi', 'borrower']
+    fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death'), 'biographi']
 admin.site.register(Author, AuthorAdmin)
 
 #admin.site.register(BookInstance)
